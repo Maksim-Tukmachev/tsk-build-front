@@ -2,21 +2,22 @@
 
 export const SITE = {
   name: "ТСК Горизонт",
-  phoneDisplay: "8 (8555) 24-18-90",
-  phoneHref: "tel:+78555241890",
-  telegramHref: "https://t.me/tsk_gorizont",
+  phoneDisplay: "+7 917 295-88-22",
+  phoneHref: "tel:+79172958822",
   maxHref: "https://max.ru/u/tsk_gorizont",
-  email: "info@tsk-gorizont.ru",
-  cities: "Нижнекамск и Набережные Челны",
+  maxChannelHref: "https://max.ru/id1650390568_biz",
+  email: "tckgorizont@mail.ru",
+  cities: "Набережные Челны и Республика Татарстан",
   yearFounded: 2015,
   housesBuilt: 120,
   guaranteeYears: 5,
-  buildDaysFrom: 45,
+  buildDaysFrom: 90,
   priceFromMln: "2,1",
-  inn: "1651000000",
-  ogrn: "1151651000000",
-  legalName: "ООО «ТСК Горизонт»",
-  address: "г. Нижнекамск, пр. Химиков, 48, офис 12",
+  inn: "1650390568",
+  kpp: "165001001",
+  legalName:
+    "ООО Торгово-строительная компания «Горизонт»",
+  address: "г. Набережные Челны, Бизнес Центр 2/18, офис 1907",
 } as const;
 
 export const focusRing =

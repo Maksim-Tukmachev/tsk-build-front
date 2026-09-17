@@ -62,22 +62,6 @@ export function Trust() {
                   {SITE.housesBuilt}+
                 </dd>
               </div>
-              <div className="col-span-2 flex min-h-[160px] items-end justify-between gap-[var(--space-3)] bg-[var(--c-accent)] p-[var(--space-3)] text-[var(--c-ink)]">
-                <div>
-                  <dt className="text-[length:var(--fs-caption)] font-semibold uppercase tracking-[0.06em] opacity-65">
-                    Гарантия на конструктив
-                  </dt>
-                  <dd className="mt-[var(--space-2)] text-[length:var(--fs-display)] font-extrabold leading-[1.08]">
-                    {SITE.guaranteeYears} лет
-                  </dd>
-                </div>
-                <span
-                  className="text-[length:var(--fs-display)] font-normal leading-none opacity-45"
-                  aria-hidden="true"
-                >
-                  ✓
-                </span>
-              </div>
             </dl>
 
             <div className="mt-[var(--space-5)] border-t border-white/15 pt-[var(--space-3)]">
@@ -85,7 +69,7 @@ export function Trust() {
                 Юридическая информация
               </p>
               <p className="mt-[var(--space-2)] text-[length:var(--fs-ui)] leading-[1.5] text-white/70">
-                {SITE.legalName} · ИНН {SITE.inn} · ОГРН {SITE.ogrn}
+                {SITE.legalName} · ИНН {SITE.inn} · КПП {SITE.kpp}
               </p>
             </div>
           </div>

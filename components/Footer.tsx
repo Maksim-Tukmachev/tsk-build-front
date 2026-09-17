@@ -23,8 +23,8 @@ export function Footer() {
               />
             </Link>
             <p className="mt-[var(--space-3)] max-w-[400px] text-[length:var(--fs-ui)] leading-[1.5] text-white/55">
-              Проектируем и строим каркасные дома в Нижнекамске, Набережных
-              Челнах и ближайших районах.
+              Проектируем и строим каркасные дома в Набережных Челнах. Работаем
+              по Республике Татарстан.
             </p>
           </div>
 
@@ -93,30 +93,45 @@ export function Footer() {
             <p className="mt-[var(--space-3)] max-w-[360px] text-[length:var(--fs-ui)] leading-[1.5] text-white/50">
               {SITE.address}
             </p>
-            <div className="mt-[var(--space-3)] flex gap-[var(--space-3)]">
-              <a
-                href={SITE.maxHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-[length:var(--fs-ui)] font-semibold text-white/75 hover:text-white ${focusRing}`}
-              >
-                Max ↗
-              </a>
-              <a
-                href={SITE.telegramHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-[length:var(--fs-ui)] font-semibold text-white/75 hover:text-white ${focusRing}`}
-              >
-                Telegram ↗
-              </a>
-            </div>
+            <a
+              href={SITE.maxHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`mt-[var(--space-3)] inline-flex text-[length:var(--fs-ui)] font-semibold text-white/75 hover:text-white ${focusRing}`}
+            >
+              Max ↗
+            </a>
+            <a
+              href={SITE.maxChannelHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`mt-[var(--space-4)] flex w-fit items-center gap-[var(--space-3)] ${focusRing}`}
+              aria-label="Открыть канал ТСК Горизонт в Max"
+            >
+              <span className="shrink-0 bg-white p-2">
+                <Image
+                  src="/images/max-channel-qr.png"
+                  alt="QR-код канала ТСК Горизонт в Max"
+                  width={104}
+                  height={104}
+                  className="size-[104px]"
+                />
+              </span>
+              <span className="max-w-[150px]">
+                <span className="block text-[length:var(--fs-ui)] font-semibold text-white/80">
+                  Канал в Max
+                </span>
+                <span className="mt-1 block text-[length:var(--fs-caption)] leading-[1.4] text-white/45">
+                  Наведите камеру, чтобы открыть
+                </span>
+              </span>
+            </a>
           </div>
         </div>
 
         <div className="mt-[var(--space-8)] flex flex-col gap-[var(--space-2)] border-t border-white/10 pt-[var(--space-3)] text-[length:var(--fs-caption)] leading-[1.5] text-white/35 md:flex-row md:items-center md:justify-between">
           <p>
-            © 2026 {SITE.legalName} · ИНН {SITE.inn} · ОГРН {SITE.ogrn}
+            © 2026 {SITE.legalName} · ИНН {SITE.inn} · КПП {SITE.kpp}
           </p>
           <div className="flex flex-wrap gap-[var(--space-3)]">
             <Link

@@ -13,7 +13,7 @@ import {
 import { motion, useReducedMotion } from "framer-motion";
 import { Container } from "@/components/Container";
 import { EASE } from "@/components/motion-tokens";
-import { IconBurger, IconClose, IconTelegram } from "@/components/icons";
+import { IconBurger, IconClose } from "@/components/icons";
 import { SITE, btnAccent, focusRing } from "@/lib/site";
 
 const NAV_ITEMS = [
@@ -209,13 +209,6 @@ export function Header() {
 
         <div className="hidden items-center gap-[var(--space-3)] md:flex">
           <MessengerLink
-            href={SITE.telegramHref}
-            label="Написать в Telegram"
-            bg="var(--c-tg)"
-          >
-            <IconTelegram className="size-5 text-white" />
-          </MessengerLink>
-          <MessengerLink
             href={SITE.maxHref}
             label="Написать в Max"
             bg="var(--c-max)"
@@ -285,13 +278,6 @@ export function Header() {
               </p>
             </div>
             <div className="flex items-center gap-[var(--space-3)]">
-              <MessengerLink
-                href={SITE.telegramHref}
-                label="Написать в Telegram"
-                bg="var(--c-tg)"
-              >
-                <IconTelegram className="size-5 text-white" />
-              </MessengerLink>
               <MessengerLink
                 href={SITE.maxHref}
                 label="Написать в Max"

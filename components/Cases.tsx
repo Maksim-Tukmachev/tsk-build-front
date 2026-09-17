@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { CaseDetails } from "@/components/CaseDetails";
+import { CasesGallery } from "@/components/CasesGallery";
 import { Container } from "@/components/Container";
 import { CASES } from "@/data/content";
 import { btnAccent, focusRing } from "@/lib/site";
@@ -42,7 +44,7 @@ export function Cases() {
             </h2>
           </div>
           <p className="max-w-[400px] self-end text-[length:var(--fs-ui)] leading-[1.5] text-[var(--c-ink-muted)] md:col-span-4">
-            Показываем не только красивый фасад, но и бюджет, срок и отзыв
+            Показываем не только красивый фасад, но и площадь, бюджет и отзыв
             владельцев.
           </p>
         </div>
@@ -69,12 +71,9 @@ export function Cases() {
                 aria-hidden="true"
               />
               <div className="absolute inset-0 flex flex-col justify-between p-[var(--space-3)] text-white md:p-[var(--space-4)]">
-                <div className="flex items-start justify-between gap-[var(--space-2)]">
+                <div className="flex items-start gap-[var(--space-2)]">
                   <span className="bg-[var(--c-accent)] px-[var(--space-2)] py-[var(--space-1)] text-[length:var(--fs-caption)] font-semibold uppercase tracking-[0.06em] text-[var(--c-ink)]">
                     {item.area} м²
-                  </span>
-                  <span className="text-[length:var(--fs-caption)] font-semibold uppercase tracking-[0.06em] text-white/75">
-                    {item.days} дней
                   </span>
                 </div>
                 <div>
@@ -99,6 +98,7 @@ export function Cases() {
                   </div>
                 </div>
               </div>
+              <CaseDetails item={item} />
             </li>
           ))}
         </ul>
@@ -106,12 +106,15 @@ export function Cases() {
           <p className="max-w-[520px] text-[length:var(--fs-ui)] leading-[1.5] text-[var(--c-ink-muted)]">
             Подберём похожий дом и адаптируем его под ваш участок.
           </p>
-          <a
-            href="#quiz"
-            className={`${btnAccent} h-14 w-full px-[var(--space-5)] md:w-fit ${focusRing}`}
-          >
-            Получить подборку
-          </a>
+          <div className="flex w-full flex-col gap-[var(--space-2)] md:w-auto md:flex-row">
+            <CasesGallery />
+            <a
+              href="#quiz"
+              className={`${btnAccent} h-14 w-full px-[var(--space-5)] md:w-fit ${focusRing}`}
+            >
+              Получить подборку
+            </a>
+          </div>
         </div>
       </Container>
     </section>

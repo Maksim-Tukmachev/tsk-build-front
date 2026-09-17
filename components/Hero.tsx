@@ -12,14 +12,14 @@ import { Container } from "@/components/Container";
 import { EASE } from "@/components/motion-tokens";
 import { SITE, btnAccent, focusRingOnPhoto } from "@/lib/site";
 
-const ALT = `Каркасный дом ${SITE.name} в Нижнекамске и Набережных Челнах`;
+const ALT = `Каркасный дом ${SITE.name} в Набережных Челнах`;
 
 /** Short display headline — price & geo live in the lead, not in H1 */
 const H1_TEXT =
-  "СТРОИТЕЛЬСТВО КАРКАСНЫХ ДОМОВ ПО ТИПОВЫМ И ИНДИВИДУАЛЬНЫМ ПРОЕКТАМ";
+  "Крепкий каркас. Надёжный дом. Быстро строим — веками живём.";
 
 const h1ClassName =
-  "max-w-full uppercase text-[length:var(--fs-display)] font-extrabold leading-[1.08] tracking-[-0.01em] text-[var(--c-on-photo)] lg:max-w-[820px]";
+  "max-w-full text-[length:var(--fs-display)] font-extrabold leading-[1.08] tracking-[-0.01em] text-[var(--c-on-photo)] lg:max-w-[820px]";
 
 const h1Style: CSSProperties = {
   hyphens: "none",
@@ -242,8 +242,8 @@ export function Hero() {
               : { duration: 0.5, delay: 0.45, ease: EASE }
           }
         >
-          Нижнекамск и Набережные Челны · под ключ от {SITE.priceFromMln} млн ₽ ·
-          срок от {SITE.buildDaysFrom} дней · гарантия {SITE.guaranteeYears} лет
+          Набережные Челны · работаем по Республике Татарстан · под ключ от{" "}
+          {SITE.priceFromMln} млн ₽ · срок от {SITE.buildDaysFrom} дней
         </motion.p>
 
         <motion.div

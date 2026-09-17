@@ -32,8 +32,8 @@ export function FinalCta() {
                 Посмотрим участок и рассчитаем дом
               </h2>
               <p className="mt-[var(--space-3)] max-w-[480px] text-[length:var(--fs-body)] leading-[1.5] text-white/70">
-                Выезд по Нижнекамску и Набережным Челнам. Без обязательств и
-                скрытых условий.
+                Выезд по Набережным Челнам и Республике Татарстан. Без
+                обязательств и скрытых условий.
               </p>
             </div>
 
@@ -55,14 +55,6 @@ export function FinalCta() {
                   className={`text-[length:var(--fs-ui)] font-semibold text-white/80 hover:text-white ${focusRing}`}
                 >
                   Max ↗
-                </a>
-                <a
-                  href={SITE.telegramHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`text-[length:var(--fs-ui)] font-semibold text-white/80 hover:text-white ${focusRing}`}
-                >
-                  Telegram ↗
                 </a>
               </div>
             </div>
@@ -137,8 +129,8 @@ export function FinalCta() {
                       <option value="" disabled>
                         Выберите город или район
                       </option>
-                      <option>Нижнекамск</option>
                       <option>Набережные Челны</option>
+                      <option>Нижнекамск</option>
                       <option>Нижнекамский район</option>
                       <option>Тукаевский район</option>
                     </select>

@@ -21,7 +21,6 @@ const COLORS: { name: string; value: string; varName: string }[] = [
     value: "rgba(10,12,14,0.10)",
     varName: "--c-scrim-bottom",
   },
-  { name: "tg", value: "#2AABEE", varName: "--c-tg" },
   { name: "max", value: "#5B4CFF", varName: "--c-max" },
 ];
 
@@ -424,12 +423,11 @@ export default function TypoPage() {
             fontWeight: 800,
             lineHeight: 1.08,
             letterSpacing: "-0.01em",
-            textTransform: "uppercase",
             color: "var(--c-on-photo)",
             maxWidth: 800,
           }}
         >
-          СТРОИТЕЛЬСТВО КАРКАСНЫХ ДОМОВ ПО ТИПОВЫМ И ИНДИВИДУАЛЬНЫМ ПРОЕКТАМ
+          Крепкий каркас. Надёжный дом. Быстро строим — веками живём.
         </p>
         <p
           style={{

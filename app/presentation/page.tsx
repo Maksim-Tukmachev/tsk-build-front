@@ -66,7 +66,7 @@ const PROJECTS = [
     name: "Берёза",
     area: "148 м²",
     rooms: "4 комнаты",
-    image: "/images/project-bereza.jpg",
+    image: "/images/project-bereza.png",
   },
 ] as const;
 
@@ -334,9 +334,6 @@ export default function PresentationPage() {
           </p>
           <a href={SITE.phoneHref}>{SITE.phoneDisplay}</a>
           <div className={styles.messengers}>
-            <a href={SITE.telegramHref} target="_blank" rel="noreferrer">
-              Telegram
-            </a>
             <a href={SITE.maxHref} target="_blank" rel="noreferrer">
               Max
             </a>

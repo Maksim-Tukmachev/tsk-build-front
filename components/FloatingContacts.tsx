@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { IconClose, IconPhone, IconTelegram } from "@/components/icons";
+import { IconClose, IconPhone } from "@/components/icons";
 import { EASE } from "@/components/motion-tokens";
 import { focusRing, SITE } from "@/lib/site";
 import "@/app/widget.css";
@@ -39,15 +39,6 @@ const LINKS = [
     bg: "var(--c-max)",
     external: true,
     icon: <IconMax />,
-  },
-  {
-    id: "tg",
-    href: SITE.telegramHref,
-    label: "Telegram",
-    detail: "Написать в Telegram",
-    bg: "var(--c-tg)",
-    external: true,
-    icon: <IconTelegram className="size-5 text-white" />,
   },
 ] as const;
 

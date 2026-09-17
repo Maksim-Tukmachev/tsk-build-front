@@ -2,74 +2,169 @@ export type CaseItem = {
   id: string;
   title: string;
   district: string;
-  area: number;
-  days: number;
+  area: string;
   budget: string;
+  description: string;
   quote: string;
   client: string;
   image: string;
+  stages: {
+    title: string;
+    text: string;
+    image: string;
+  }[];
 };
 
 export const CASES: CaseItem[] = [
   {
     id: "nk-garden",
     title: "Одноэтажный дом с террасой и садом",
-    district: "Нижнекамск, пос. Красный Ключ",
-    area: 112,
-    days: 48,
-    budget: "2,9 млн ₽",
+    district: "Набережные Челны, посёлок Усадьба",
+    area: "98",
+    budget: "7,3 млн ₽",
+    description:
+      "Дом для постоянного проживания с просторной общей зоной и крытой террасой. Планировку адаптировали под повседневный ритм семьи и выход в сад.",
     quote:
       "Смета не прыгала по ходу работ. Бригада приезжала по графику, к лету уже жили.",
-    client: "семья Ивановых",
+    client: "Диляра Г.",
     image: "/images/case-garden-patio.jpg",
+    stages: [
+      {
+        title: "Основание",
+        text: "Свайный фундамент, обвязка и перекрытие пола.",
+        image: "/images/case-stages/usadba-foundation.png",
+      },
+      {
+        title: "Сборка каркаса",
+        text: "Стены, проёмы и стропильная система.",
+        image: "/images/case-stages/usadba-frame.png",
+      },
+      {
+        title: "Готовый дом",
+        text: "Фасад, терраса и благоустройство участка.",
+        image: "/images/case-garden-patio.jpg",
+      },
+    ],
   },
   {
     id: "chelny-blue",
-    title: "Компактный дом 86 м² с цветником",
-    district: "Набережные Челны, Орловка",
-    area: 86,
-    days: 41,
-    budget: "2,4 млн ₽",
+    title: "Компактный дом",
+    district: "Набережные Челны, СНТ Отделочник",
+    area: "86",
+    budget: "6 млн ₽",
+    description:
+      "Компактный одноэтажный дом без лишних коридоров. Основную площадь отдали кухне-гостиной, спальням и удобной входной группе.",
     quote:
       "Выбрали типовой проект, чуть подвинули кухню. Получили ключи раньше обещанного срока.",
-    client: "Андрей и Марина",
+    client: "Егор К.",
     image: "/images/case-blue-cottage.jpg",
+    stages: [
+      {
+        title: "Основание",
+        text: "Сваи, несущая обвязка и балки пола.",
+        image: "/images/case-stages/otdelochnik-foundation.png",
+      },
+      {
+        title: "Сборка каркаса",
+        text: "Монтаж стен и подготовка кровли.",
+        image: "/images/case-stages/otdelochnik-frame.png",
+      },
+      {
+        title: "Готовый дом",
+        text: "Тёплый контур, фасад и входная терраса.",
+        image: "/images/case-blue-cottage.jpg",
+      },
+    ],
   },
   {
     id: "nk-white",
     title: "Белый дом с тёмной террасой",
-    district: "Нижнекамский район, с. Шингальчи",
-    area: 98,
-    days: 45,
-    budget: "2,7 млн ₽",
+    district: "Набережные Челны, ДНП Тургай",
+    area: "от 130",
+    budget: "8 млн ₽",
+    description:
+      "Просторный дом с контрастной отделкой и большой защищённой террасой. Проект рассчитан на круглогодичное проживание семьи.",
     quote:
       "Понравилось, что прораб на связи в Max. Все этапы фиксировали актами.",
-    client: "Ринат С.",
+    client: "Наиль Г.",
     image: "/images/case-white-terrace.jpg",
+    stages: [
+      {
+        title: "Основание",
+        text: "Фундамент и перекрытие увеличенной площади.",
+        image: "/images/case-stages/turgay-foundation.png",
+      },
+      {
+        title: "Сборка каркаса",
+        text: "Несущий каркас, ветрозащита и кровля.",
+        image: "/images/case-stages/turgay-frame.png",
+      },
+      {
+        title: "Готовый дом",
+        text: "Контрастный фасад и крытая терраса.",
+        image: "/images/case-white-terrace.jpg",
+      },
+    ],
   },
   {
     id: "chelny-gray",
     title: "Серый каркасник на сваях",
     district: "Набережные Челны, Сидоровка",
-    area: 92,
-    days: 38,
-    budget: "2,5 млн ₽",
+    area: "72",
+    budget: "5,5 млн ₽",
+    description:
+      "Небольшой дом на свайном основании для участка со сложным рельефом. Внутри разместили всё необходимое для постоянного проживания.",
     quote:
       "Свайный фундамент подняли за три дня, коробку закрыли к середине месяца.",
     client: "Дмитрий К.",
     image: "/images/case-gray-piles.jpg",
+    stages: [
+      {
+        title: "Основание",
+        text: "Винтовые сваи и деревянное перекрытие.",
+        image: "/images/case-stages/sidorovka-foundation.png",
+      },
+      {
+        title: "Сборка каркаса",
+        text: "Стены, стропила и каркас веранды.",
+        image: "/images/case-stages/sidorovka-frame.png",
+      },
+      {
+        title: "Готовый дом",
+        text: "Закрытый контур и отделанный фасад.",
+        image: "/images/case-gray-piles.jpg",
+      },
+    ],
   },
   {
     id: "nk-porch",
     title: "Современный дом с большой верандой",
     district: "Нижнекамск, Промышленный район",
-    area: 108,
-    days: 52,
-    budget: "3,1 млн ₽",
+    area: "108",
+    budget: "7 млн ₽",
+    description:
+      "Современный одноэтажный дом с большой верандой по эскизу заказчика. Веранда стала продолжением общей жилой зоны.",
     quote:
       "Хотели именно такую веранду — сделали по нашему эскизу, без переплат.",
     client: "семья Гареевых",
     image: "/images/case-modern-porch.jpg",
+    stages: [
+      {
+        title: "Основание",
+        text: "Сваи и увеличенное основание веранды.",
+        image: "/images/case-stages/nizhnekamsk-foundation.png",
+      },
+      {
+        title: "Сборка каркаса",
+        text: "Каркас дома и широкий навес веранды.",
+        image: "/images/case-stages/nizhnekamsk-frame.png",
+      },
+      {
+        title: "Готовый дом",
+        text: "Фасад и полностью завершённая веранда.",
+        image: "/images/case-modern-porch.jpg",
+      },
+    ],
   },
 ];
 
@@ -82,7 +177,7 @@ export const PROCESS_STEPS = [
   {
     title: "Выезд замерщика",
     days: "2–3 дня",
-    text: "Бесплатный выезд по Нижнекамску и Набережным Челнам, точная смета.",
+    text: "Бесплатный выезд по Набережным Челнам и Республике Татарстан, точная смета.",
   },
   {
     title: "Договор и аванс",
@@ -131,7 +226,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: "Какие сроки строительства?",
-    a: "От договора до сдачи — в среднем 45–70 дней. Срок зависит от сезона, типа фундамента и выбранного пакета (коробка или под ключ).",
+    a: "От договора до сдачи — от 90 дней. Срок зависит от сезона, типа фундамента и выбранного пакета (коробка или под ключ).",
   },
   {
     q: "Что входит в гарантию?",
